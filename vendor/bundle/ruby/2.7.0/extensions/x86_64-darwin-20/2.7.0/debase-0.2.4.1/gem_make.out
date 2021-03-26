@@ -1,0 +1,22 @@
+current directory: /Users/mumu/Desktop/CocoaPodsPlugins/vendor/bundle/ruby/2.7.0/gems/debase-0.2.4.1/ext/attach
+/Users/mumu/.rvm/rubies/ruby-2.7.2/bin/ruby -I /Users/mumu/.rvm/rubies/ruby-2.7.2/lib/ruby/2.7.0 -r ./siteconf20210325-8499-1ue3boo.rb extconf.rb
+checking for vm_core.h... yes
+checking for iseq.h... yes
+checking for version.h... yes
+checking for vm_core.h... yes
+checking for vm_insnhelper.h... yes
+checking for vm_core.h... yes
+checking for method.h... yes
+creating Makefile
+
+current directory: /Users/mumu/Desktop/CocoaPodsPlugins/vendor/bundle/ruby/2.7.0/gems/debase-0.2.4.1/ext/attach
+make "DESTDIR=" clean
+
+current directory: /Users/mumu/Desktop/CocoaPodsPlugins/vendor/bundle/ruby/2.7.0/gems/debase-0.2.4.1/ext/attach
+make "DESTDIR="
+compiling attach.c
+linking shared-object attach.bundle
+
+current directory: /Users/mumu/Desktop/CocoaPodsPlugins/vendor/bundle/ruby/2.7.0/gems/debase-0.2.4.1/ext/attach
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 attach.bundle ./.gem.20210325-8499-13aqjbq

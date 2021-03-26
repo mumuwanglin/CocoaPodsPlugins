@@ -1,0 +1,6 @@
+          framework module LKDBHelper {
+            umbrella header "LKDBHelper.h"
+
+            export *
+            module * { export * }
+          }

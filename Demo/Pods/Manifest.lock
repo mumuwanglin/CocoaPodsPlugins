@@ -1,0 +1,34 @@
+PODS:
+  - FMDB (2.7.5)
+  - LKDBHelper (2.5.7)
+  - YYCache (1.0.4)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - FMDB
+  - LKDBHelper
+  - YYCache (from `https://github.com/ibireme/YYCache/raw/master/YYCache.podspec`)
+  - YYModel (from `https://github.com/ibireme/YYModel/raw/master/YYModel.podspec`)
+
+SPEC REPOS:
+  "git@gitee.com:mumuwang/spec_bin_dev.git":
+    - FMDB
+    - LKDBHelper
+    - YYCache
+    - YYModel
+
+EXTERNAL SOURCES:
+  YYCache:
+    :podspec: https://github.com/ibireme/YYCache/raw/master/YYCache.podspec
+  YYModel:
+    :podspec: https://github.com/ibireme/YYModel/raw/master/YYModel.podspec
+
+SPEC CHECKSUMS:
+  FMDB: 84f49330253275d28973ecb417e76b7f98b4cdde
+  LKDBHelper: 7b356530bf583e359d058fc127fcda2bf5ab0afe
+  YYCache: 00a7acc9c5f586689e2b97dafb5114c50e2b566e
+  YYModel: 23eee8c4eb3f0046f4e67f42d60576c510dc932a
+
+PODFILE CHECKSUM: 60704c39fdacac207f10a2598cfb0646f84bcace
+
+COCOAPODS: 1.10.1

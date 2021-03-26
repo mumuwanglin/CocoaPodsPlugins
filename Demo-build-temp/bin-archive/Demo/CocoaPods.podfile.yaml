@@ -1,0 +1,39 @@
+---
+installation_method:
+  name: cocoapods
+  options:
+    :deterministic_uuids: false
+    :generate_multiple_pod_projects: false
+    :incremental_installation: false
+    :share_schemes_for_development_pods: true
+    :warn_for_multiple_pod_sources: false
+workspace: Demo.xcworkspace
+sources:
+  - "git@gitee.com:mumuwang/spec_bin_dev.git"
+  - "git@gitee.com:mumuwang/spec_source.git"
+  - https://cdn.cocoapods.org
+plugins:
+  cocoapods-disable-podfile-validations:
+    no_abstract_only_pods: true
+  cocoapods-generate:
+    {}
+  cocoapods-imy-bin:
+    {}
+target_definitions:
+  - abstract: true
+    children:
+      - name: App-iOS
+    dependencies:
+      - Demo:
+        - :path: "../../../Demo/Demo_test.podspec"
+      - FMDB
+      - LKDBHelper
+      - YYCache:
+        - :podspec: https://github.com/ibireme/YYCache/raw/master/YYCache.podspec
+      - YYModel:
+        - :podspec: https://github.com/ibireme/YYModel/raw/master/YYModel.podspec
+    name: Pods
+    user_project_path: Demo.xcodeproj
+    uses_frameworks:
+      :linkage: :static
+      :packaging: :library
